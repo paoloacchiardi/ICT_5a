@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<!-- viewport and width = width based on device, initial scale = initial zoom, shrink-to-fit = user can't zoom -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Corsi">
+		<meta name="author" content="Acchiardi Paolo">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> <!-- bootstrap CSS -->
+	</head>
+	<style>
+	
+	.change_string:hover{ 
+		font-weight: bold; 
+		color: #FFFF00;
+	}
+	
+	.black_color{
+		color: #000000;
+	}
+	
+	.photo{
+		width:1050px;
+		height:722px;
+	}
+	
+	.carousel-control-next,
+	.carousel-control-prev{
+    filter: invert(100%);
+	}
+	
+	</style>
+	<body>
+	<nav class="navbar navbar-expand-sm fixed-top bg-dark"> <!-- dark = white text, bg-success = green bg, fixed-top = always on top while scroll -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"> 
+				<span class="navbar-toggler-icon">
+				<img src="img/down_arrow.jpg" width="50" height="40"/>
+				</span> <!-- toggler-icon = photo with 3 lines -->
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.jpg" width="50" height="40" class="d-inline-block align-top" alt="logo"/>
+				Fitness Academy
+			</a>
+			<div class="collapse navbar-collapse" id="nav-content"> <!-- navbar content, collapse = hidden links -->
+				<ul class="navbar-nav mr-auto"> <!-- row, mr-auto = form on right top -->
+					<li class="nav-item">
+						<a class="nav-link change_string" href="home.html" title="Home">Home</a> <!-- element, href = html file link -->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link change_string" href="centro_fitness.html" title="Centro fitness">Centro fitness</a> <!-- element, href = html file link -->
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle change_string" href="#" title="Corsi" id="dropdown_corsi" data-toggle="dropdown">Corsi</a> <!-- dropdown with personal id, no href -->
+						<div class="dropdown-menu" aria-labelledby="dropdown_corsi"> <!-- dropdown content -->
+							<a class="dropdown-item" href="aerobica.html">Aerobica</a> <!-- dropdown items -->
+							<a class="dropdown-item" href="tone_up.html">Tone up</a>
+							<a class="dropdown-item" href="posturale.html">Posturale</a>
+							<a class="dropdown-item" href="total_body.html">Total body</a>
+							<a class="dropdown-item" href="GAG.html">GAG</a>
+							<a class="dropdown-item" href="zumba.html">Zumba</a>
+							<a class="dropdown-item" href="yoga.html">Yoga</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link change_string" href="personal_trainer.html" title="Personal trainer">Personal trainer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link change_string" href="dove_siamo.html" title="Dove siamo">Dove siamo</a> <!-- element, href = html file link -->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link change_string" href="contatti.html" title="Contatti">Contatti</a> <!-- element, href = html file link -->
+					</li>
+				</ul>
+				<form class="form-inline"> 
+					<input class="form-control mr-sm-2" type="search" placeholder="Cerca"> <!-- control = input type, type = search,text,password,email,datetime-local,date,month,
+																							time,week,number,url,tel,color, placeholder = string in the box -->
+					<button class="btn btn-success" type="submit">Cerca</button> <!-- btn-outline-success = border and btn same color while hover -->
+				</form>
+			</div>
+		</nav>
+		<p class="font-italic" style="font-weight: bold; margin-left: 1300px; margin-top: 75px;">
+			<a href="info.html" title="Pagina principale" target="_blank">Vai alla pagina principale</a>
+		</p>
+		<div id="carousel_courses" class="carousel slide" data-ride="carousel" data-interval="10000"> <!-- data-interval = 10s x slide, default 5s -->
+			<ol class="carousel-indicators">
+			<li data-target="#carousel_courses" data-slide-to="0" class="active"/> <!-- carousel slides indicators, one must be active -->
+			<li data-target="#carousel_courses" data-slide-to="1"/>
+			<li data-target="#carousel_courses" data-slide-to="2"/>
+			<li data-target="#carousel_courses" data-slide-to="3"/>
+			<li data-target="#carousel_courses" data-slide-to="4"/>
+			<li data-target="#carousel_courses" data-slide-to="5"/>
+			<li data-target="#carousel_courses" data-slide-to="6"/>
+			</ol>
+			<div class="carousel-inner"> <!-- slides -->
+				<div class="carousel-item active"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/aerobica.webp" alt="First slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Aerobica</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/tone_up.jpg" alt="Second slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Tone up</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/posturale.jpg" alt="Third slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Posturale</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/total_body.jpg" alt="Fourth slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Total body</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/gag.webp" alt="Fifth slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">GAG</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/zumba.jpg" alt="Sixth slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Zumba</h3>
+					</div>
+				</div>
+				<div class="carousel-item"> <!-- one slide must be active -->
+					<img class="d-block w-100 photo" src="img/yoga.webp" alt="Seventh slide"/> <!-- w-100 = width 100%, d-block = block element -->
+					<div class="carousel-caption d-none d-md-block"> <!-- d-md-block = only on md + devices -->
+						<h3 class="black_color">Yoga</h3>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel_courses" role="button" data-slide="prev"> <!-- right & left arrows -->
+				<span class="carousel-control-prev-icon" aria-hidden="true">
+				</span>
+				<span class="sr-only">Indietro</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel_courses" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true">
+				</span>
+				<span class="sr-only">Avanti</span>
+			</a>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> <!-- Jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> <!-- Popper -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> <!-- JS -->
+	</body>
+</html>
